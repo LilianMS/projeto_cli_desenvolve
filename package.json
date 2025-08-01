@@ -2,6 +2,7 @@
   "name": "projeto_cli_desenvolve",
   "version": "1.0.0",
   "description": "CLI do sentimento",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/LilianMS/projeto_cli_desenvolve/issues"
   },
-  "homepage": "https://github.com/LilianMS/projeto_cli_desenvolve#readme"
+  "homepage": "https://github.com/LilianMS/projeto_cli_desenvolve#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "node-nlp": "^5.0.0-alpha.5"
+  },
+  "bin": {
+    "sentimento": "./index.js"
+  }
 }
