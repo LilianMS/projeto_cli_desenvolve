@@ -1,0 +1,19 @@
+{
+  "name": "projeto_cli_desenvolve",
+  "version": "1.0.0",
+  "description": "CLI do sentimento",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianMS/projeto_cli_desenvolve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilianMS/projeto_cli_desenvolve/issues"
+  },
+  "homepage": "https://github.com/LilianMS/projeto_cli_desenvolve#readme"
+}
