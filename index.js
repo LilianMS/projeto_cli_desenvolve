@@ -16,7 +16,7 @@ program
     manager.train().then(() => {
       manager.process('pt', frase).then((result) => {
         console.log(chalk.green('Resultado da análise de sentimento:'));
-        console.log(result);
+        console.log(result.sentiment.vote);
       });
     });
   });
