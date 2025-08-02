@@ -10,15 +10,30 @@ program
   .name('sentimento')
   .description('Análise de sentimento em português')
   .argument('<frase>', 'Frase a ser analisada')
-  .action((frase) => {
+  .action(async (frase) => {
+	console.log(chalk.yellow('Analisando... Aguarde 🧠'));
     const manager = new NlpManager({ languages: ['pt'] });
     manager.addDocument('pt', frase, 'sentimento.analisar');
-    manager.train().then(() => {
-      manager.process('pt', frase).then((result) => {
-        console.log(chalk.green('Resultado da análise de sentimento:'));
-        console.log(result.sentiment.vote);
-      });
-    });
+	
+	// oculta logs de treinamento
+	const originalLog = console.log;
+	console.log = () => {}; // desativa logs
+	await manager.train(false);
+	console.log = originalLog; // ativa logs novamente
+
+	const result = await manager.process('pt', frase);
+	const { sentiment } = result;
+	const sentimentoGlobal = sentiment.vote; // 'positive', 'negative', 'neutral'
+
+	// Emojis padrão
+	const emojiSentimento = {
+		'positive': '😄',
+		'negative': '😠',
+		'neutral': '😐'
+	};
+	
+    console.log(chalk.green('Resultado:'));
+    console.log(emojiSentimento[sentimentoGlobal]);
   });
 
   program.parse();

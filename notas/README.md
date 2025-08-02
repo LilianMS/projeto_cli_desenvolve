@@ -3,6 +3,20 @@
 	Melhorias e Explicações Detalhadas
 -->
 
+# Estrutura atual
+```bash
+projeto_cli_desenvolve/
+├── index.js           # Entrada da CLI
+├── treinarModelo.js   # Treinamento separado
+├── model.nlp          # Arquivo salvo com o modelo treinado
+├── package.json
+├── package-lock.json
+├── README.md
+├── notas/
+│   └── README.md
+
+```
+
 # Bibliotecas Selecionadas
 
 ## NLP.js
