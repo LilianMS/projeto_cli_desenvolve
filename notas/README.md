@@ -7,7 +7,7 @@
 
 ## NLP.js
 
-NLP.js é uma biblioteca para Node.js voltada ao processamento de linguagem natural (NLP), ideal para chatbots e análise textual. Ela oferece recursos como extração de entidades, análise de sentimentos, detecção automática de idioma e suporte a mais de 40 idiomas.
+> NLP.js é uma biblioteca para Node.js voltada ao processamento de linguagem natural (NLP), ideal para chatbots e análise textual. Ela oferece recursos como extração de entidades, análise de sentimentos, detecção automática de idioma e suporte a mais de 40 idiomas.
 
 **Vantagens:**
 - Suporte multilíngue avançado (incluindo português).
@@ -17,7 +17,7 @@ NLP.js é uma biblioteca para Node.js voltada ao processamento de linguagem natu
 > Fonte: [kommunicate.io - Bibliotecas NLP para Node.js e JavaScript](https://www-kommunicate-io.translate.goog/blog/nlp-libraries-node-javascript/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=wa)
 
 **Limitações:**  
-A node-nlp não possui modelos pré-treinados para emoções específicas (como raiva, alegria ou tristeza), apenas para sentimentos básicos: positivo, negativo e neutro.
+> A node-nlp não possui modelos pré-treinados para emoções específicas (como raiva, alegria ou tristeza), apenas para sentimentos básicos: positivo, negativo e neutro.
 
 **Funcionalidades disponíveis:**
 - Análise de sentimento geral.
@@ -26,11 +26,11 @@ A node-nlp não possui modelos pré-treinados para emoções específicas (como 
 
 ## Chalk
 
-Chalk é uma biblioteca para Node.js que permite estilizar a saída do terminal com cores e estilos, tornando as mensagens mais legíveis e atraentes, sem alterar o prototype de String.
+> Chalk é uma biblioteca para Node.js que permite estilizar a saída do terminal com cores e estilos, tornando as mensagens mais legíveis e atraentes, sem alterar o prototype de String.
 
 ## Inquirer
 
-A biblioteca Inquirer facilita a criação de interfaces interativas no terminal, com perguntas, menus e validações. É ideal para CLIs, tornando a aplicação mais amigável.
+> A biblioteca Inquirer facilita a criação de interfaces interativas no terminal, com perguntas, menus e validações. É ideal para CLIs, tornando a aplicação mais amigável.
 
 **Vantagens:**
 - Interface clara e interativa.
