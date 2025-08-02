@@ -4,12 +4,30 @@ import {NlpManager} from 'node-nlp';
 import {Command} from 'commander';
 import chalk from 'chalk';
 
-// Configurações e constantes
+// ========================================
+// CONFIGURAÇÕES E CONSTANTES
+// ========================================
+
+const CONFIG = {
+	LANGUAGE: 'pt',
+	SENTIMENT_INTENT: 'sentimento.analisar'
+};
+
 const EMOJIS_SENTIMENTO = {
 	'positive': '😄',
 	'negative': '😠',
 	'neutral': '😐'
 };
+
+const MESSAGES = {
+	ANALYZING: 'Analisando... Aguarde 🧠',
+	RESULT: 'Resultado:',
+	ERROR: 'Erro ao analisar sentimento:'
+};
+
+// ========================================
+// UTILITÁRIOS
+// ========================================
 
 // Função para silenciar logs temporariamente (para funções assíncronas)
 async function silenciarLogsAsync(asyncCallback) {
@@ -20,35 +38,52 @@ async function silenciarLogsAsync(asyncCallback) {
 	return result;
 }
 
+// ========================================
+// FUNÇÕES DE ANÁLISE DE SENTIMENTO
+// ========================================
+
 // Função para criar e configurar o manager NLP
 function criarNlpManager() {
-	return new NlpManager({ languages: ['pt'] });
+	return new NlpManager({ languages: [CONFIG.LANGUAGE] });
 }
 
 // Função para treinar o modelo
 async function treinarModelo(manager, frase) {
-	manager.addDocument('pt', frase, 'sentimento.analisar');
+	manager.addDocument(CONFIG.LANGUAGE, frase, CONFIG.SENTIMENT_INTENT);
 	await silenciarLogsAsync(() => manager.train(false));
 }
 
 // Função para analisar sentimento
 async function analisarSentimento(frase) {
-	console.log(chalk.yellow('Analisando... Aguarde 🧠'));
+	console.log(chalk.yellow(MESSAGES.ANALYZING));
 	
 	const manager = criarNlpManager();
 	await treinarModelo(manager, frase);
 	
-	const result = await manager.process('pt', frase);
+	const result = await manager.process(CONFIG.LANGUAGE, frase);
 	return result.sentiment.vote;
 }
 
+// ========================================
+// FUNÇÕES DE INTERFACE
+// ========================================
+
 // Função para exibir resultado
 function exibirResultado(sentimento) {
-	console.log(chalk.green('Resultado:'));
+	console.log(chalk.green(MESSAGES.RESULT));
 	console.log(EMOJIS_SENTIMENTO[sentimento]);
 }
 
-// Configuração do programa CLI
+// Função para tratar erros
+function tratarErro(error) {
+	console.error(chalk.red(MESSAGES.ERROR), error.message);
+	process.exit(1);
+}
+
+// ========================================
+// CONFIGURAÇÃO CLI
+// ========================================
+
 const program = new Command();
 
 program
@@ -60,12 +95,14 @@ program
 		const sentimento = await analisarSentimento(frase);
 		exibirResultado(sentimento);
 	} catch (error) {
-		console.error(chalk.red('Erro ao analisar sentimento:'), error.message);
-		process.exit(1);
+		tratarErro(error);
 	}
   });
 
-  program.parse();
+program.parse();
 
-
-  // pra depois rsrs https://api.github.com/emojis
+// ========================================
+// NOTAS PARA DESENVOLVIMENTO FUTURO
+// ========================================
+// TODO: Implementar integração com API do GitHub para emojis personalizados
+// Referência: https://api.github.com/emojis
