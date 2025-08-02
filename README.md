@@ -16,7 +16,7 @@ Este repositório reúne os estudos e implementações do modelo CLI solicitado 
 
 ## Escopo
 
-Desenvolver uma aplicação CLI capaz de receber um texto do usuário, analisar seu conteúdo e indicar se transmite um sentimento positivo ou negativo. O sistema também deve tratar erros, informando quando não for possível identificar o sentimento por meio do modelo de linguagem.
+> Desenvolver uma aplicação CLI capaz de receber um texto do usuário, analisar seu conteúdo e indicar se transmite um sentimento positivo ou negativo. O sistema também deve tratar erros, informando quando não for possível identificar o sentimento por meio do modelo de linguagem.
 
 ### Etapas
 
