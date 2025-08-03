@@ -1,4 +1,4 @@
-# 🤖 Sentimento CLI — Análise de Sentimento com IA
+# 🤖 VingaDevs CLI — Análise de Sentimento com IA
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![API](https://img.shields.io/badge/API-Hugging%20Face-orange.svg)](https://huggingface.co/)
@@ -142,7 +142,7 @@ projeto_cli_desenvolve/
 │       ├── cli_wth_emoji.js        # Código da versão 1.1
 │       ├── sentimento_cli.js       # Código da versão 2.0
 │       ├── sentimento_hibrido.js   # Código da versão 2.1
-│       ├── vingadevs-cli.js   # Código da versão 2.2
+│       ├── vingadevs-cli.js        # Código da versão 2.2
 ├── 📄 package.json                 # Dependências e scripts VingaDevs
 ├── 📄 .env                         # Variáveis de ambiente (não versionar)
 ├── 📄 .gitignore                   # Arquivos ignorados pelo Git

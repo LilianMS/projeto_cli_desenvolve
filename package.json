@@ -10,14 +10,30 @@
     "vingadevs": "node vingadevs-modular.js",
     "legacy": "node vingadevs-cli.js"
   },
-  "keywords": ["sentimento", "ia", "cli", "vingadevs", "node", "huggingface", "modular"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianMS/projeto_cli_desenvolve.git"
+  },
+  "keywords": [
+    "sentimento",
+    "ia",
+    "cli",
+    "vingadevs",
+    "node",
+    "huggingface",
+    "modular"
+  ],
   "authors": [
     "Alicia - VingaDevs",
     "Brenda - VingaDevs",
     "Davis - VingaDevs",
-    "Leticia - VingaDevs", 
+    "Leticia - VingaDevs",
     "Lilian - VingaDevs"
   ],
+  "bugs": {
+    "url": "https://github.com/LilianMS/projeto_cli_desenvolve/issues"
+  },
+  "homepage": "https://github.com/LilianMS/projeto_cli_desenvolve#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "chalk": "^5.0.0"
