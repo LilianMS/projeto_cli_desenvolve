@@ -1,0 +1,24 @@
+{
+  "name": "projeto_cli_desenvolve",
+  "version": "1.0.0",
+  "description": "Projeto em equipe do Desenvolve do Grupo Boticário",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianMS/projeto_cli_desenvolve.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilianMS/projeto_cli_desenvolve/issues"
+  },
+  "homepage": "https://github.com/LilianMS/projeto_cli_desenvolve#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "openai": "^5.11.0"
+  }
+}
