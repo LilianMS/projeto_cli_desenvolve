@@ -1,0 +1,25 @@
+{
+  "name": "vingadevs-sentimento-cli",
+  "version": "3.0.0",
+  "description": "Análise de sentimento com IA - Desenvolvido pela equipe VingaDevs (Versão Modular)",
+  "type": "module",
+  "main": "vingadevs-modular.js",
+  "scripts": {
+    "start": "node vingadevs-modular.js",
+    "dev": "node vingadevs-modular.js",
+    "vingadevs": "node vingadevs-modular.js",
+    "legacy": "node vingadevs-cli.js"
+  },
+  "keywords": ["sentimento", "ia", "cli", "vingadevs", "node", "huggingface", "modular"],
+  "authors": [
+    "Alicia - VingaDevs",
+    "Brenda - VingaDevs",
+    "Davis - VingaDevs",
+    "Leticia - VingaDevs", 
+    "Lilian - VingaDevs"
+  ],
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "chalk": "^5.0.0"
+  }
+}
