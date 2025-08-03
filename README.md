@@ -276,6 +276,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **Feito com ❤️ pela equipe VingaDevs do Desenvolve Grupo Boticário**
 
-[⬆️ Voltar ao topo](#-sentimento-cli--análise-de-sentimento-com-ia)
+[⬆️ Voltar ao topo](#-vingadevs-cli--an%C3%A1lise-de-sentimento-com-ia)
 
 </div>
