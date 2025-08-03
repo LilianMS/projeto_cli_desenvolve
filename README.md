@@ -1,39 +1,6 @@
 # 🤖 Sentimento CLI — Análise de Sentimento com IA
 
-[![### 4. Execute o Projeto
-
-O **VingaDevs CLI** funciona exclusivamente em modo interativo, proporcionando uma ---
-
-## 📁 Estrutura do Projeto VingaDevs
-
-```
-projeto_cli_desenvolve/
-├── 📄 vingadevs-cli.js          # Aplicação principal VingaDevs (v2.0)
-├── 📄 sentimento-hibrido.js     # Versão híbrida anterior  
-├── 📁 src/
-│   └── sentimento-cli.js        # Versão original
-├── 📄 package.json              # Dependências e scripts VingaDevs
-├── 📄 .env                      # Variáveis de ambiente (não versionar)
-├── 📄 .gitignore               # Arquivos ignorados pelo Git
-└── 📄 README.md                # Este arquivo
-```
-
----
-
-## 📈 Próximas Funcionalidades VingaDevseriência conversacional intuitiva:
-
-```bash
-# Inicie o VingaDevs CLI
-npm start
-
-# Ou diretamente
-node vingadevs-cli.js
-
-# Ou usando o comando especial VingaDevs
-npm run vingadevs
-```
-
-> 💡 **Filosofia VingaDevs:** Focamos na interação humana e experiência conversacional!s://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![API](https://img.shields.io/badge/API-Hugging%20Face-orange.svg)](https://huggingface.co/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Team](https://img.shields.io/badge/Team-VingaDevs-purple.svg)](https://github.com/LilianMS/projeto_cli_desenvolve)
@@ -170,39 +137,42 @@ Digite "sair" para encerrar
 npm start
 
 # Ou diretamente
-node vingadevs-cli.js
-
-# Comando especial da equipe
-npm run vingadevs
+node sentimento-hibrido.js
 ```
 
-> 🎯 **Foco VingaDevs:** Experiência 100% interativa para máxima usabilidade!
+> 🎯 **Foco VingaDevs:** Priorizamos a experiência interativa para melhor usabilidade!
 
 ---
 
+## 🔧 Comandos e Opções
+
+```bash
+# Ajuda
+node sentimento-hibrido.js --help
+
+# Versão
+node sentimento-hibrido.js --version
+
+# Modo verbose (informações técnicas)
+node sentimento-hibrido.js --verbose "texto"
+
+# Modo interativo
+node sentimento-hibrido.js interativo
+```
+
 ---
 
-## � Próximas Funcionalidades VingaDevs
-
-- [ ] 🎨 Temas personalizáveis de cores
-- [ ] 📊 Histórico de análises da sessão
-- [ ] 📁 Análise de arquivos de texto
-- [ ] 🤖 Diferentes personalidades de IA
-- [ ] 📱 Suporte a múltiplos textos simultâneos
-- [ ] 🎛️ Configuração de diferentes modelos IA
-- [ ] 📋 Exportação de resultados (JSON/CSV)
-- [ ] 🌟 Sistema de favoritos para frases analisadas
+## 📁 Estrutura do Projeto
 
 ```
 projeto_cli_desenvolve/
-├── 📄 vingadevs-cli.js          # Aplicação principal VingaDevs (v2.0)
-├── 📄 sentimento-hibrido.js     # Versão híbrida anterior  
+├── 📄 sentimento-hibrido.js    # Aplicação principal (versão 2.0)
 ├── 📁 src/
-│   └── sentimento-cli.js        # Versão original
-├── 📄 package.json              # Dependências e scripts VingaDevs
-├── 📄 .env                      # Variáveis de ambiente (não versionar)
-├── 📄 .gitignore               # Arquivos ignorados pelo Git
-└── 📄 README.md                # Este arquivo
+│   └── sentimento-cli.js       # Versão original
+├── 📄 package.json             # Dependências e scripts
+├── 📄 .env                     # Variáveis de ambiente (não versionar)
+├── 📄 .gitignore              # Arquivos ignorados pelo Git
+└── 📄 README.md               # Este arquivo
 ```
 
 ---
