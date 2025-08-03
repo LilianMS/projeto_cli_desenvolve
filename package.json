@@ -1,0 +1,11 @@
+{
+  "name": "sentimento-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/sentimento-cli.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
