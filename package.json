@@ -1,11 +1,15 @@
 {
   "name": "sentimento-cli",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "start": "node src/sentimento-cli.js"
+    "start": "node sentimento-hibrido.js",
+    "dev": "node sentimento-hibrido.js",
+    "interativo": "node sentimento-hibrido.js interativo"
   },
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "commander": "^9.0.0",
+    "chalk": "^5.0.0"
   }
 }
