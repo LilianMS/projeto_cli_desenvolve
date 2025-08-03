@@ -22,11 +22,14 @@ O CLI solicita ao usuário um texto no terminal, envia para a API da Hugging Fac
 ```bash
 git clone https://github.com/seu-usuario/projeto_cli_desenvolve.git
 cd projeto_cli_desenvolve
+```
 
 ### 2. Instale as Dependências
 ```bash
 npm install
+```
 
 ### 3. Execute o projeto
 ```bash
 node src/sentimento-cli.js
+```
