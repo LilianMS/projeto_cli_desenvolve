@@ -244,6 +244,7 @@ npm install
 
 ## 📈 Próximas Funcionalidades
 
+- [ ] 📦 Modularização do código
 - [ ] 📊 Histórico de análises
 - [ ] 📁 Análise de arquivos de texto
 - [ ] 🌐 Interface web opcional
