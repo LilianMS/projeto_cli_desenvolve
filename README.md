@@ -1,22 +1,55 @@
 # 🤖 Sentimento CLI — Análise de Sentimento com IA
 
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![### 4. Execute o Projeto
+
+O **VingaDevs CLI** funciona exclusivamente em modo interativo, proporcionando uma ---
+
+## 📁 Estrutura do Projeto VingaDevs
+
+```
+projeto_cli_desenvolve/
+├── 📄 vingadevs-cli.js          # Aplicação principal VingaDevs (v2.0)
+├── 📄 sentimento-hibrido.js     # Versão híbrida anterior  
+├── 📁 src/
+│   └── sentimento-cli.js        # Versão original
+├── 📄 package.json              # Dependências e scripts VingaDevs
+├── 📄 .env                      # Variáveis de ambiente (não versionar)
+├── 📄 .gitignore               # Arquivos ignorados pelo Git
+└── 📄 README.md                # Este arquivo
+```
+
+---
+
+## 📈 Próximas Funcionalidades VingaDevseriência conversacional intuitiva:
+
+```bash
+# Inicie o VingaDevs CLI
+npm start
+
+# Ou diretamente
+node vingadevs-cli.js
+
+# Ou usando o comando especial VingaDevs
+npm run vingadevs
+```
+
+> 💡 **Filosofia VingaDevs:** Focamos na interação humana e experiência conversacional!s://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![API](https://img.shields.io/badge/API-Hugging%20Face-orange.svg)](https://huggingface.co/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Team](https://img.shields.io/badge/Team-VingaDevs-purple.svg)](https://github.com/LilianMS/projeto_cli_desenvolve)
 
-> **Projeto em equipe do Desenvolve Grupo Boticário** 🚀
+> **Projeto da equipe VingaDevs - Desenvolve Grupo Boticário** 🚀
 
-Este é um **CLI (Command Line Interface)** avançado em **Node.js** que analisa o sentimento de textos utilizando **Inteligência Artificial** através da **Hugging Face Inference API** com modelo **BERT multilíngue**.
+Este é um **CLI (Command Line Interface)** avançado em **Node.js** desenvolvido pela equipe **VingaDevs** que analisa o sentimento de textos utilizando **Inteligência Artificial** através da **Hugging Face Inference API** com modelo **BERT multilíngue**.
 
 ## ✨ Funcionalidades
 
 - 🎯 **Análise precisa** com 5 níveis de sentimento (Muito Negativo → Muito Positivo)
-- 🖥️ **Modo CLI direto** - análise rápida via argumentos
-- 💬 **Modo interativo** - conversação contínua 
+- � **Modo interativo intuitivo** - conversação contínua e amigável
 - 🎨 **Interface rica** - cores, emojis e formatação elegante
 - 🌍 **Multilíngue** - funciona em português, inglês e outros idiomas
 - 🔒 **Seguro** - variáveis de ambiente para API keys
-- 📚 **Bem documentado** - código organizado e comentado
+- 📚 **Bem documentado** - código organizado pela equipe VingaDevs
 
 ## 🧠 Tecnologia
 
@@ -55,47 +88,50 @@ HUGGINGFACE_API_KEY=seu_token_aqui
 
 ### 4. Execute o Projeto
 
-#### 🔹 Modo CLI Direto
+O **VingaDevs CLI** funciona em modo interativo, proporcionando uma experiência conversacional intuitiva:
+
 ```bash
-# Análise rápida
-node sentimento-hibrido.js "Estou muito feliz hoje!"
-
-# Com informações detalhadas
-node sentimento-hibrido.js --verbose "Texto para análise"
-
-# Usando npm scripts
-npm start "Seu texto aqui"
-```
-
-#### 🔹 Modo Interativo
-```bash
-# Modo conversação
-node sentimento-hibrido.js interativo
+# Inicie o modo interativo
+node sentimento-hibrido.js
 
 # Ou usando npm
-npm run interativo
+npm start
 ```
+
+> � **Dica VingaDevs:** O modo interativo permite análises contínuas sem reiniciar o programa!
 
 ---
 
-## � Exemplos de Uso
+## 💡 Exemplo de Uso - VingaDevs Experience
 
-### Exemplo 1: Análise Rápida
 ```bash
-$ node sentimento-hibrido.js "Adorei o novo produto!"
+$ npm start
 
+🤖 VingaDevs - Análise de Sentimento com IA
+Bem-vindo ao nosso analisador inteligente! 
+Digite "sair" para encerrar
+
+💬 Digite o texto para análise: Adorei trabalhar com a equipe VingaDevs!
 🔄 Analisando sentimento com IA... 🧠
 
 ==================================================
-📝 Texto analisado: "Adorei o novo produto!"
+📝 Texto analisado: "Adorei trabalhar com a equipe VingaDevs!"
 🎯 Resultado da Análise: Muito Positivo
 😊 Emoji: 🤩
 ==================================================
-```
 
-### Exemplo 2: Modo Interativo
-```bash
-$ node sentimento-hibrido.js interativo
+💬 Digite o texto para análise: Este projeto ficou incrível
+🔄 Analisando sentimento com IA... 🧠
+
+==================================================
+📝 Texto analisado: "Este projeto ficou incrível"
+🎯 Resultado da Análise: Muito Positivo
+😊 Emoji: 🤩
+==================================================
+
+💬 Digite o texto para análise: sair
+👋 Obrigado por usar o VingaDevs CLI! Até logo!
+```
 
 🤖 Modo Interativo - Análise de Sentimento
 Digite "sair" para encerrar
@@ -127,77 +163,77 @@ Digite "sair" para encerrar
 
 ---
 
-## 🛠️ Scripts Disponíveis
+## 🛠️ Como Usar
 
 ```bash
-# Iniciar aplicação
-npm start "Seu texto"
+# Iniciar o VingaDevs CLI
+npm start
 
-# Modo interativo
-npm run interativo
+# Ou diretamente
+node vingadevs-cli.js
 
-# Modo desenvolvimento
-npm run dev "Texto de teste"
+# Comando especial da equipe
+npm run vingadevs
 ```
+
+> 🎯 **Foco VingaDevs:** Experiência 100% interativa para máxima usabilidade!
 
 ---
 
-## 🔧 Comandos e Opções
-
-```bash
-# Ajuda
-node sentimento-hibrido.js --help
-
-# Versão
-node sentimento-hibrido.js --version
-
-# Modo verbose (informações técnicas)
-node sentimento-hibrido.js --verbose "texto"
-
-# Modo interativo
-node sentimento-hibrido.js interativo
-```
-
 ---
 
-## 📁 Estrutura do Projeto
+## � Próximas Funcionalidades VingaDevs
+
+- [ ] 🎨 Temas personalizáveis de cores
+- [ ] 📊 Histórico de análises da sessão
+- [ ] 📁 Análise de arquivos de texto
+- [ ] 🤖 Diferentes personalidades de IA
+- [ ] 📱 Suporte a múltiplos textos simultâneos
+- [ ] 🎛️ Configuração de diferentes modelos IA
+- [ ] 📋 Exportação de resultados (JSON/CSV)
+- [ ] 🌟 Sistema de favoritos para frases analisadas
 
 ```
 projeto_cli_desenvolve/
-├── 📄 sentimento-hibrido.js    # Aplicação principal (versão 2.0)
+├── 📄 vingadevs-cli.js          # Aplicação principal VingaDevs (v2.0)
+├── 📄 sentimento-hibrido.js     # Versão híbrida anterior  
 ├── 📁 src/
-│   └── sentimento-cli.js       # Versão original
-├── 📄 package.json             # Dependências e scripts
-├── 📄 .env                     # Variáveis de ambiente (não versionar)
-├── 📄 .gitignore              # Arquivos ignorados pelo Git
-└── 📄 README.md               # Este arquivo
+│   └── sentimento-cli.js        # Versão original
+├── 📄 package.json              # Dependências e scripts VingaDevs
+├── 📄 .env                      # Variáveis de ambiente (não versionar)
+├── 📄 .gitignore               # Arquivos ignorados pelo Git
+└── 📄 README.md                # Este arquivo
 ```
 
 ---
 
-## 🎯 Evolução do Projeto
+## 🎯 Evolução do Projeto VingaDevs
 
-### Versão 1.0 (Inicial)
+### Versão 1.0 (Protótipo Inicial)
 - ✅ Análise básica com node-nlp
 - ✅ Interface simples
 - ❌ Baixa precisão
 - ❌ Vulnerabilidades de segurança
 
-### Versão 2.0 (Híbrida) - **Atual** 🚀
+### Versão 2.0 (VingaDevs Release) - **Atual** 🚀
 - ✅ IA avançada (BERT multilíngue)
-- ✅ Interface rica e intuitiva
-- ✅ Múltiplos modos de uso
-- ✅ Código bem organizado
+- ✅ Interface interativa rica e intuitiva
+- ✅ Experiência focada no usuário
+- ✅ Código bem organizado pela equipe
 - ✅ Sem vulnerabilidades
-- ✅ Alta precisão
+- ✅ Alta precisão e confiabilidade
+
+**Decisão VingaDevs:** Focamos no modo interativo por proporcionar a melhor experiência ao usuário! 🎯
 
 ---
 
-## 🤝 Equipe
+## 🤝 Equipe VingaDevs
 
-- **Lilian** - Desenvolvimento com APIs Node.js e organização do código
-- **Brenda** - Integração com API Hugging Face
-- **Alicia** - Uso API Hugging Face e implementação interativa com ReadLine
+- **Lilian** - Desenvolvimento e organização do código, integração de APIs
+- **Brenda** - Integração com API Hugging Face e testes
+- **Alicia** - Implementação do modo interativo com ReadLine e UX
+
+> 💜 **VingaDevs** - Unidos pela paixão por tecnologia e inovação!
 
 
 ---
